@@ -13,6 +13,9 @@ app.use(express.json())
 const User=require("./routes/User.routes")
 app.use("/",User)
 
+const Job=require("./routes/Job.routes")
+app.use("/",Job)
+
 const Email=require("./routes/Email.routes")
 app.use("/",Email)
 
